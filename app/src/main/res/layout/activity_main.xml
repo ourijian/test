@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/back"
+            android:background="@color/colorPrimary"
+            app:title="新闻"
+            app:titleTextColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_above="@id/rg_nav"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioGroup
+            android:id="@+id/rg_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_classmate"
+                android:button="@null"
+                android:text="同学"
+                android:textColor="@drawable/nav_text_color"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/classmate"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb_leaveword"
+                android:button="@null"
+                android:text="留言"
+                android:textColor="@drawable/nav_text_color"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/leaveword"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb_news"
+                android:button="@null"
+                android:text="新闻"
+                android:textColor="@drawable/nav_text_color"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/news"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb_announcement"
+                android:button="@null"
+                android:text="公告"
+                android:textColor="@drawable/nav_text_color"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/announcement"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb_me"
+                android:button="@null"
+                android:text="我"
+                android:textColor="@drawable/nav_text_color"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/me"
+                android:layout_height="match_parent" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+</layout>

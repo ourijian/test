@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MeFragment"
+    android:orientation="vertical">
+
+    <com.ourijian.startschool.view.MyLinearLayout
+        android:id="@+id/item_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="头像"
+        app:value=""
+        app:rightImage="@drawable/head"/>
+
+    <com.ourijian.startschool.view.MyLinearLayout
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="姓名"
+        app:value="xiaoming"
+        app:rightImage="@drawable/right"/>
+
+    <com.ourijian.startschool.view.MyLinearLayout
+        android:id="@+id/item_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="部门"
+        app:value="信息学院"
+        app:rightImage="@drawable/right"/>
+
+    <com.ourijian.startschool.view.MyLinearLayout
+        android:id="@+id/item_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="专业"
+        app:value="移动应用开发"
+        app:rightImage="@drawable/right"/>
+
+    <com.ourijian.startschool.view.MyLinearLayout
+        android:id="@+id/item_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="电话"
+        app:value="15674647473"
+        app:rightImage="@drawable/right"/>
+
+</LinearLayout>
